@@ -379,3 +379,15 @@ td select{font-size:16px}
 
 .hero-text>p{text-wrap:pretty}
 @media(max-width:680px){.hero h1 br{display:none}.hero h1 em{display:block;white-space:normal;text-wrap:balance;margin-top:6px}.builder-preview{scroll-margin-top:100px}}
+
+@media(min-width:901px){
+ .hero{min-height:540px}
+ .hero-text{padding-top:48px;padding-bottom:48px}
+ .hero h1{font-size:clamp(40px,3.2vw,58px);line-height:1.1}
+ .hero-text>p{font-size:17px;line-height:1.65}
+ .hero-actions{margin-top:22px;gap:14px}
+ .hero-actions .btn{font-size:16px;min-height:50px;padding:12px 20px}
+ .hero-link{font-size:16px;min-height:48px}
+ .hero-art{min-height:540px}
+ .hero-note{margin-top:24px}
+}
