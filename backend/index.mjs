@@ -158,4 +158,6 @@ export const server=http.createServer(async(req,res)=>{
   const types={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.woff2':'font/woff2'};res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream'});res.end(req.method==='HEAD'?undefined:readFileSync(file));
  }catch(e){const status=e.status||400;json(res,{error:/constraint failed/i.test(e.message)?'Dữ liệu không hợp lệ hoặc tồn kho vừa thay đổi.':e.message},status);}
 });
-if(process.env.NODE_ENV!=='test')server.listen(Number(process.env.PORT||3001),process.env.HOST||'127.0.0.1',()=>{log('system',`An Lộc Gifts · Node.js API & website: http://${process.env.HOST||'127.0.0.1'}:${process.env.PORT||3001} · ${process.env.COMMERCE_ENABLED==='true'?'review required':'SANDBOX'}`);});
+const listenHost=process.env.HOST||(process.env.NODE_ENV==='production'?'0.0.0.0':'127.0.0.1');
+const listenPort=Number(process.env.PORT||3001);
+if(process.env.NODE_ENV!=='test')server.listen(listenPort,listenHost,()=>{log('system',`An Lộc Gifts · Node.js API & website: http://${listenHost}:${listenPort} · ${process.env.COMMERCE_ENABLED==='true'?'review required':'SANDBOX'}`);});
