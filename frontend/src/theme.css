@@ -55,6 +55,54 @@ input,textarea,select{border-radius:6px;background:#ffffff}
 @media(max-width:370px){.hero h1{font-size:36px}}
 @media(prefers-reduced-motion:reduce){.product{transition:none}}
 
+/* Modern sans-serif storefront styling while retaining the oak and gold brand palette. */
+:root{
+ --oak:#4a2e1b;
+ --wood:#8b5a2b;
+ --deep:#211812;
+ --gold:#b78a45;
+ --cream:#f8f9fb;
+ --paper:#f1f3f5;
+ --ink:#253041;
+ --muted:#667085;
+ --border:#e4e7ec;
+ --serif:var(--sans);
+}
+body{background:#fff;color:var(--ink)}
+h1,h2,h3,.brand,.product-name,.wine-option strong{font-family:var(--sans);font-weight:600;letter-spacing:-.02em}
+p{line-height:1.65}
+.topbar{background:var(--oak);font-size:13px;letter-spacing:0}
+.site-header{height:82px;background:#fff;border-bottom-color:var(--border);box-shadow:0 1px 3px #1018280d}
+.brand{font-size:28px;letter-spacing:.02em}
+.brand-sub{letter-spacing:.25em}
+.site-header nav{gap:22px}
+.site-header nav a{font-size:15px}
+.site-header nav a.active:after{height:3px;bottom:15px;border-radius:3px}
+.btn,.hero-actions .btn{border-radius:8px;font-weight:600}
+.btn.gold{background:var(--oak);border-color:var(--oak);color:#fff}
+.btn.gold:hover{background:var(--wood)}
+input,textarea,select{border-radius:8px;background:#fff;border-color:#d0d5dd;color:var(--ink)}
+.hero{background:#fff;color:var(--oak);border-bottom-color:var(--border)}
+.hero h1{font-weight:600;letter-spacing:-.04em}
+.hero h1 em{font-weight:500}
+.hero-text>p{color:#667085}
+.hero-kicker{font-weight:600;letter-spacing:.12em}
+.hero-actions .hero-link{color:var(--wood)}
+.benefits{background:#f8f9fb;border-bottom-color:var(--border)}
+.section{padding-block:64px}
+.section h2,.section-heading h2,.intro h2{font-weight:600}
+.category-card,.product,.panel,.builder-preview,.order-card,.stat,.customer-card{border-radius:14px}
+.category-card{box-shadow:0 4px 14px #10182812}
+.product{box-shadow:0 2px 8px #1018280a}
+.product:hover{box-shadow:0 10px 24px #10182816}
+.product-copy{padding:18px}
+.product-name{font-size:22px}
+.product-bottom strong{font-weight:700}
+.add-button{border-radius:8px}
+.page-title{background:#f8f9fb;border-bottom-color:var(--border)}
+.filters,.builder-preview{background:#f8f9fb;border-color:var(--border)}
+footer{background:#1f2937;border-top:0}
+
 /* White surfaces; existing navbar colors are intentionally inherited. */
 html,body,#root{background:#fff}
 .hero,.page-title,.benefits{border-bottom-color:#e9e5df}
