@@ -1,0 +1,18 @@
+{
+  "name": "@anloc/backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env index.mjs",
+    "start": "node --env-file-if-exists=.env index.mjs",
+    "setup": "node setup.mjs",
+    "backup": "node --env-file-if-exists=.env backup.mjs"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "mysql2": "^3.24.6"
+  }
+}

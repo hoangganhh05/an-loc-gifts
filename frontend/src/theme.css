@@ -1,0 +1,74 @@
+/* Bright white and oak storefront. Header and navigation colors remain unchanged. */
+.hero{color:var(--oak);background:#ffffff;border-bottom:1px solid #dcc9ab}
+.hero:before{opacity:0}
+.hero h1{font-weight:500}
+.hero h1 em{color:#8b5a2b}
+.hero-text>p{color:#655341}
+.hero-kicker{color:#805622}
+.hero-kicker span,.hero-note .thin-line{background:#a47b40}
+.hero-note{color:#746044}
+.hero-link{color:#5b3a23;border-bottom:1px solid #c2a77f}
+.hero-link:hover{color:#8b5a2b}
+.hero-counter{color:#6c5135}
+.hero-counter span{color:#5b3a23}
+.hero-art{margin-top:26px;margin-bottom:26px;min-height:598px}
+.arch{top:3%;height:97%;left:8%;right:0;border-color:#b79155;box-shadow:inset 0 0 45px #160e09,0 18px 45px #62411e28}
+.hero-stamp{color:#f0dcb6;background:#392517d9;padding:10px 14px;border:1px solid #b7905455;border-radius:4px}
+.benefits{background:#ffffff;border-bottom:1px solid var(--border)}
+.btn{border-radius:6px}
+.btn.primary{box-shadow:0 4px 12px #4a2e1b12}
+.btn.gold{box-shadow:0 6px 18px #98713c22}
+input,textarea,select{border-radius:6px;background:#ffffff}
+.page-title{background:#fafafa;border-bottom:1px solid #dfcfb7}
+.page-title h1{max-width:1000px;margin-inline:auto}
+.page-title>p:last-child{color:#6c5844;max-width:780px;margin-inline:auto}
+.category-card{border-radius:12px;overflow:hidden;border:1px solid #d9c5a5}
+.category-caption{padding:26px}
+.product{background:#ffffff;border:1px solid #e5d8c5;border-radius:12px;overflow:hidden;box-shadow:0 4px 18px #4a2e1b06;display:flex;flex-direction:column;transition:box-shadow .2s,border-color .2s}
+.product:hover{border-color:#b99a67;box-shadow:0 12px 28px #4a2e1b12}
+.product-image,.three .product-image{width:calc(100% - 24px);margin:12px 12px 0;border:0;border-radius:8px;background:#fafafa}
+.product-photo{mix-blend-mode:multiply}
+.product-copy{padding:20px;display:flex;flex-direction:column;flex:1}
+.product-name,.three .product-name{font-weight:600;font-size:29px;line-height:1.25}
+.product-bottom{margin-top:auto;padding-top:14px;align-items:center}
+.product-bottom strong{font-weight:600;color:#754a21}
+.product-tag{border:1px solid #d6c09c;border-radius:4px;background:#ffffff}
+.image-caption{border-radius:4px;background:#ffffffed;color:#67533c}
+.add-button{border-radius:6px;background:#4a2e1b;border-color:#4a2e1b;color:#fff8ed}
+.add-button:not(:disabled):hover{background:#8b5a2b;border-color:#8b5a2b;color:white}
+.add-button:disabled{background:#f2ece2;color:#756551;border-color:#e1d6c5}
+.product-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px 16px 38px}
+.product-placeholder .bottle{max-height:calc(100% - 50px);flex:1;min-height:0}
+.product-placeholder small{font-family:var(--sans);font-size:12px;line-height:1.5;text-align:center;color:#6c5844;max-width:190px}
+.filters{padding:22px;background:#fafafa;border:1px solid #e1d3bc;border-radius:10px;height:fit-content}
+.filter-fields .text-link{color:#775027}
+.search-input{background:#ffffff;border-radius:6px}
+.result-count{color:#6a5139}
+.panel,.builder-preview,.order-card,.stat,.customer-card{border-radius:10px;border:1px solid #e1d3bc;box-shadow:0 6px 24px #4a2e1b06;background:#ffffff}
+.wine-option{border-radius:8px;background:#ffffff}
+.wine-option.selected{background:#faf5ed}
+.personal-banner{border-block:1px solid #9b76493d}
+.modal{border-radius:12px}
+.detail-art{border-radius:8px;background:#fafafa}
+@media(max-width:900px){.hero-art{min-height:470px}.product-copy{padding:16px}.product-name,.three .product-name{font-size:27px}}
+@media(max-width:680px){.hero-art{margin:0 0 24px;min-height:360px}.hero-text{padding-bottom:30px}.hero-note{margin-top:26px}.hero h1{font-size:42px}.filters{padding:18px}.product-image,.three .product-image{width:calc(100% - 20px);margin:10px 10px 0}.product-copy{padding:18px}.product-placeholder small{font-size:12px}.page-title{padding:36px 5%}.category-caption{padding:22px}}
+@media(max-width:370px){.hero h1{font-size:36px}}
+@media(prefers-reduced-motion:reduce){.product{transition:none}}
+
+/* White surfaces; existing navbar colors are intentionally inherited. */
+html,body,#root{background:#fff}
+.hero,.page-title,.benefits{border-bottom-color:#e9e5df}
+.product,.filters,.panel,.builder-preview,.order-card,.stat,.customer-card{border-color:#e6e3dd}
+.category-card.wine,.category-card.whisky,.category-card.gift{background:#f8f8f7;color:var(--oak);border-color:#e6e3dd}
+.category-card:after{background:linear-gradient(0deg,#ffffff 0%,#ffffffed 24%,transparent 80%)}
+.category-caption small,.category-caption>span{color:#715235}
+.personal-banner{background:#fafafa;color:var(--oak);border:1px solid #e6e3dd;border-radius:12px}
+.personal-copy .eyebrow,.personal-copy h2 em{color:#8b5a2b}
+.personal-copy>p:not(.eyebrow){color:#655341}
+.personal-visual{background:#f5f5f3}
+.gift-outline,.vertical-label{color:#8b5a2b}
+footer{background:#fafafa;color:var(--ink);border-top:1px solid #e6e3dd}
+.footer-brand .brand,.footer-main h4{color:var(--oak)}
+.footer-brand>small,.footer-note,.footer-bottom,.footer-main>div>a:not(.brand){color:#675a4d}
+.footer-main>div>a:hover{color:#8b5a2b}
+.modal{background:#fff}

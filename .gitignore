@@ -1,0 +1,16 @@
+﻿node_modules/
+dist/
+data/
+.env
+.env.*
+!.env.example
+.sites-runtime/
+outputs/
+backups/
+
+# Local tool state, database exports and certificates
+.openai/
+*.sql
+*.sqlite*
+*.pem
+*.key

@@ -1,0 +1,20 @@
+{
+  "name": "an-loc-gifts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "node dev.mjs",
+    "build": "npm run build --workspace frontend",
+    "start": "npm start --workspace backend",
+    "test": "node --test tests/*.test.mjs",
+    "setup": "npm run setup --workspace backend"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
